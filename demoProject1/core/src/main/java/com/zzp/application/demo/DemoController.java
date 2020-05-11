@@ -1,4 +1,4 @@
-package com.zzp.application;
+package com.zzp.application.demo;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
