@@ -2,6 +2,7 @@ package com.zzp.application;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,7 @@ public class DemoController {
 
     @GetMapping("test1")
     @ApiOperation("测试接口1")
-    public String test(){
+    public String test(@ApiParam(value = "姓名") String name){
         return "你好";
     }
 }

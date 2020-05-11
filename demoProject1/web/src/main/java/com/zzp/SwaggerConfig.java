@@ -1,9 +1,6 @@
 package com.zzp;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -21,25 +18,36 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
-@ComponentScan("com.zzp")
 public class SwaggerConfig {
+    /**
+     * 创建API应用
+     * apiInfo() 增加API相关信息
+     * 通过select()函数返回一个ApiSelectorBuilder实例,用来控制哪些接口暴露给Swagger来展现，
+     * 本例采用指定扫描的包路径来定义指定要建立API的目录。
+     * @return
+     */
     @Bean
-    public Docket userApi() {
-        Docket docket = new Docket(DocumentationType.SWAGGER_2)
+    public Docket createRestApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.zzp"))
                 .paths(PathSelectors.any())
                 .build();
-        return docket;
     }
 
+    /**
+     * 创建该API的基本信息（这些基本信息会展现在文档页面中）
+     * 访问地址：http://项目实际地址/swagger-ui.html
+     * @return
+     */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("项目1")
-                .description("接口")
-                .termsOfServiceUrl("http://www.baidu.com/")
-                .contact("zeep")
+                .title("springcloud个人项目")
+                .description("存放代码和工具")
+                .termsOfServiceUrl("https://github.com/")
+                .license("github")
+                .licenseUrl("github地址")
                 .version("1.0")
                 .build();
     }
