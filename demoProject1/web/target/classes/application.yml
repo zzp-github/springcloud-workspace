@@ -39,5 +39,5 @@ eureka:
   instance:
     prefer-ip-address: true         #将IP注册到服务注册中心
     instanceId: ${spring.cloud.client.ipAddress}:${server.port}
-    status-page-url: http://localhost:8801/swagger-ui.html # ${server.port}为该服务的端口号
+    status-page-url: http://localhost:8802/swagger-ui.html # ${server.port}为该服务的端口号
 swagger-open: true
