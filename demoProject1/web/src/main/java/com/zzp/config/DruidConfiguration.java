@@ -13,7 +13,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 /**
- * 阿里数据库连接池 Druid配置 
+ * 阿里数据库连接池 Druid配置
  * 创建者 柒
  * 创建时间	2018年3月15日
  */
@@ -69,7 +69,7 @@ public class DruidConfiguration {
         private String filters;
         private String connectionProperties;
 
-        @Bean  
+        @Bean
         public DataSource dataSource() {
             DruidDataSource datasource = new DruidDataSource();
             datasource.setUrl(url);
