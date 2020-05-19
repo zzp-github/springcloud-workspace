@@ -1,4 +1,4 @@
-package com.zzp.application.string;
+package com.zzp.application.controller.string;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

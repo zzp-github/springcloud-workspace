@@ -48,7 +48,7 @@ public class SwaggerConfig {
                 .groupName("demo")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.demo"))
+                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.controller.demo"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -63,7 +63,22 @@ public class SwaggerConfig {
                 .groupName("string")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.string"))
+                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.controller.string"))
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+    /**
+     * 数据库相关
+     * @return
+     */
+    @Bean
+    public Docket createDaoApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("dao")
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.controller.dao"))
                 .paths(PathSelectors.any())
                 .build();
     }
