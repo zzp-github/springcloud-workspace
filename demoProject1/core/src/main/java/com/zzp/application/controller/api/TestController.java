@@ -1,4 +1,4 @@
-package com.zzp.application.controller.dao;
+package com.zzp.application.controller.api;
 
 
 import com.zzp.application.domain.service.TestService;
@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -18,15 +19,15 @@ import org.springframework.stereotype.Controller;
  * @author zzp
  * @since 2020-05-18
  */
-@Controller
-@RequestMapping("/test")
+@RestController
+@RequestMapping("/api")
 @Api("test表接口")
 public class TestController {
 
     @Autowired
     TestService service;
 
-    @GetMapping("all")
+    @GetMapping("/listAll")
     @ApiOperation("获取所有数据")
     public Object list(){
         return service.list();

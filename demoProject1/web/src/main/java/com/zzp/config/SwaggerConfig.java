@@ -1,5 +1,6 @@
 package com.zzp.config;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -18,6 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
+@ConditionalOnProperty(name = "swagger-open", havingValue = "true")
 public class SwaggerConfig {
     /**
      * 创建该API的基本信息（这些基本信息会展现在文档页面中）
@@ -75,10 +77,10 @@ public class SwaggerConfig {
     @Bean
     public Docket createDaoApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("dao")
+                .groupName("api")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.controller.dao"))
+                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.controller.api"))
                 .paths(PathSelectors.any())
                 .build();
     }
