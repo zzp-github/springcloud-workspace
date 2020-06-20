@@ -84,4 +84,19 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any())
                 .build();
     }
+
+    /**
+     * 数据库相关
+     * @return
+     */
+    @Bean
+    public Docket createRedisApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("redis-api")
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.zzp.application.controller.redisApi"))
+                .paths(PathSelectors.any())
+                .build();
+    }
 }

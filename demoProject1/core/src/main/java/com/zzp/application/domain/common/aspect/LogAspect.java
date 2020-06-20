@@ -1,4 +1,4 @@
-package com.zzp.application.common.aspect;
+package com.zzp.application.domain.common.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;

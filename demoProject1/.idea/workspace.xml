@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d7b9d12-6313-4fac-8cbc-1ef168c54a6c" name="Default Changelist" comment="整合mybatis plus, 报错了。">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/common/aspect/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7d7b9d12-6313-4fac-8cbc-1ef168c54a6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/redisApi/RedisApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/domain/common/utils/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/zzp/config/JedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/test/java/NormalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/dao/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/api/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/string/StringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/string/StringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/common/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/domain/common/aspect/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/demo/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/demo/DemoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zzp/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zzp/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,18 +41,13 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="181" />
-    <option name="y" value="86" />
-    <option name="width" value="1582" />
-    <option name="height" value="824" />
-  </component>
   <component name="ProjectId" id="1dWwES9Lij9uZF08dC1hG5w2FIS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -61,7 +57,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589791177634" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/main/java/com/zzp/application/controller/string/StringController.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zzp.application.controller.redisApi" />
       <recent name="com.zzp.application.controller.demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -92,6 +89,13 @@
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MysqlGenerator" />
+      <module name="web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NormalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NormalTest" />
       <module name="web" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,6 +117,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.NormalTest" />
         <item itemvalue="Application.MysqlGenerator" />
       </list>
     </recent_temporary>
@@ -137,7 +142,8 @@
       <workItem from="1589599262300" duration="4815000" />
       <workItem from="1589764471041" duration="4927000" />
       <workItem from="1589854660125" duration="596000" />
-      <workItem from="1592554045708" duration="5909000" />
+      <workItem from="1592554045708" duration="6151000" />
+      <workItem from="1592616573617" duration="11600000" />
     </task>
     <task id="LOCAL-00001" summary="配置swagger">
       <created>1589163059081</created>
@@ -167,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589445054768</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="AOP">
+      <created>1592560552791</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592560552791</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,69 +191,74 @@
     <MESSAGE value="配置druid数据源" />
     <MESSAGE value="项目启动输出swagger地址" />
     <MESSAGE value="整合mybatis plus, 报错了。" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合mybatis plus, 报错了。" />
+    <MESSAGE value="AOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="373" y="86" key="CommitChangelistDialog2" timestamp="1592560435797">
+    <state x="353" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592647299090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="373" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592560435797" />
-    <state x="184" y="85" width="1536" height="860" key="DiffContextDialog" timestamp="1592556412730">
+    <state x="353" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592647299090" />
+    <state x="373" y="86" key="CommitChangelistDialog2" timestamp="1592560551585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="85" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592556412730" />
+    <state x="373" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592560551585" />
+    <state x="184" y="85" width="1536" height="860" key="DiffContextDialog" timestamp="1592560534693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592560534693" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1592556401390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592556401390" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1592647386381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386381" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1592647386380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386380" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1592647386380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386380" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1592647386380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386380" />
+    <state width="1877" height="325" key="GridCell.Tab.1.bottom" timestamp="1592647386381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386381" />
+    <state width="1877" height="325" key="GridCell.Tab.1.center" timestamp="1592647386381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386381" />
+    <state width="1877" height="325" key="GridCell.Tab.1.left" timestamp="1592647386381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1592560419346">
+    <state width="1877" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386381" />
+    <state width="1877" height="325" key="GridCell.Tab.1.right" timestamp="1592647386381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592560419346" />
-    <state width="1877" height="277" key="GridCell.Tab.2.bottom" timestamp="1592558405219">
+    <state width="1877" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592647386381" />
+    <state width="1877" height="277" key="GridCell.Tab.2.bottom" timestamp="1592560688617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592558405219" />
-    <state width="1877" height="277" key="GridCell.Tab.2.center" timestamp="1592558405219">
+    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592560688617" />
+    <state width="1877" height="277" key="GridCell.Tab.2.center" timestamp="1592560688617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592558405219" />
-    <state width="1877" height="277" key="GridCell.Tab.2.left" timestamp="1592558405219">
+    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592560688617" />
+    <state width="1877" height="277" key="GridCell.Tab.2.left" timestamp="1592560688617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592558405219" />
-    <state width="1877" height="277" key="GridCell.Tab.2.right" timestamp="1592558405219">
+    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592560688617" />
+    <state width="1877" height="277" key="GridCell.Tab.2.right" timestamp="1592560688617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592558405219" />
+    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592560688617" />
     <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1592557110695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,6 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592558137197" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1592560610300">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592560610300" />
     <state x="662" y="252" width="693" height="536" key="find.popup" timestamp="1592555376958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
