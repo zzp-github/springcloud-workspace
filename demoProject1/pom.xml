@@ -12,6 +12,7 @@
         <module>web</module>
         <module>core</module>
         <module>dao</module>
+        <module>dto</module>
     </modules>
 
     <parent>

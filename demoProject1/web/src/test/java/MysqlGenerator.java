@@ -110,7 +110,7 @@ public class MysqlGenerator {
         // 设置逻辑删除键
         strategy.setLogicDeleteFieldName("deleted");
         //数据库表名称
-        strategy.setInclude("test");
+        strategy.setInclude("translate");
         //strategy.setSuperEntityColumns("id");
         //驼峰转连字符
         strategy.setControllerMappingHyphenStyle(true);
